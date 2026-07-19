@@ -14,3 +14,13 @@ h2 {
     color:rgb(18, 18, 94);
     font-size:40px;
 }
+
+.review {
+    font-style: italic;
+    color:rgb(32, 32, 32);
+}
+
+.highlight {
+    background-color: rgb(255, 242, 157);
+    padding:5px;
+}
