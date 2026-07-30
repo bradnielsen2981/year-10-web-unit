@@ -1,10 +1,14 @@
 <html>
+    <link rel="stylesheet" href="static/magic.css">
     <body>
         <h1>Magic 8 ball</h1>
-        <img id="ballimage" src="static/images/magicball.png" alt="Magic 8 ball" width="600" height="600">
+        <div id="ball-container">
+            <img id="ballimage" src="static/images/magicball.png" alt="Magic 8 ball" width="600" height="600">
+            <div id="answerbox"></div>
+        </div>
         <p>Ask a question and click the button to get an answer!</p>
         <input id="clickme" type="button" value="Ask the Magic 8 Ball">
-        <div id="answerbox"></div>
+        
     </body>
     <script src="static/magic.js"></script>
     </html>

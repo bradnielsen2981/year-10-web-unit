@@ -1,0 +1,25 @@
+﻿#ball-container {
+    position: relative;
+    width: 600px;
+    margin-bottom: 1rem;
+}
+
+#ballimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#answerbox {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    background: none;
+    pointer-events: none;
+    z-index: 1;
+}
