@@ -110,3 +110,23 @@ body::after {
         margin: 0 0 20px 0;
     }
 }
+
+.rollover-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.rollover {
+    display: none;
+    background: rgb(218, 218, 151);
+    color: #1f4e79;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 6px 10px;
+    z-index: 1000;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: calc(50% + 100px);
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
