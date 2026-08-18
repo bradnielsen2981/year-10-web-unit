@@ -12,20 +12,24 @@ body {
     background: #1f4e79;
     border-radius: 8px;
     margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.navbar ul {
+.nav-menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
-.navbar li {
+.nav-item {
+    position: relative;
     margin: 0;
 }
 
-.navbar li a {
+.nav-item a,
+.dropbtn {
     display: block;
     color: white;
     text-decoration: none;
@@ -34,12 +38,40 @@ body {
     transition: background-color 0.3s;
 }
 
-.navbar li a:hover {
+.nav-item a:hover,
+.dropbtn:hover,
+.nav-item a.active,
+.dropbtn.active {
     background-color: #3a6ea5;
 }
 
-.navbar li a.active {
-    background-color: #163b5c;
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    background: #163b5c;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 14px 20px;
+    background: #163b5c;
+}
+
+.dropdown-menu li a:hover {
+    background: #1f4e79;
 }
 
 h1 {

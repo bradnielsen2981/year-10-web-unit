@@ -1,13 +1,25 @@
 <html>
-    <link rel="stylesheet" href="static/my.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Review</title>
+        <link rel="stylesheet" href="static/css/my.css">
+    </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Movie Reviews</a></li>
-                <li><a href="#">Coming Soon</a></li>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropbtn">Games ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="magic8ball.html">Magic 8 Ball</a></li>
+                        <li><a href="paperscissorsrock.html">Paper Scissors Rock</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">Movie Reviews</a></li>
+                <li class="nav-item"><a href="#">Coming Soon</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="main">
             <h1>Movie Review</h1>
             <h2>Odyssey</h2>
@@ -25,5 +37,5 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MxQTMu_7Vno?si=xRYMXI-sxkOWm-gH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </body>
-    <script src="static/my.js"></script>
+    <script src="static/js/my.js"></script>
 </html>
